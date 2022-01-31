@@ -1,6 +1,6 @@
 #!/bin/bash -xev
-yum -y update
-yum -y install golang
+sudo yum -y update
+sudo yum -y install golang
 #yum -y install git # unnecessary, go dependency
 export HOME=/home/ec2-user
 cd $HOME

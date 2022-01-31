@@ -1,8 +1,8 @@
 #!/bin/bash -xe
 PORT=$1
-yum -y update
-yum -y install golang
-yum -y install git
+sudo yum -y update
+sudo yum -y install golang
+sudo yum -y install git
 cd /home/ec2-user
 mkdir tmp
 export GOCACHE=/home/ec2-user/tmp
