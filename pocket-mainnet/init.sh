@@ -17,6 +17,6 @@ go build -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 mkdir -p /home/ec2-user/.pocket/config/
 cd /home/ec2-user/.pocket/config/
 curl -O https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
-curl -O https://raw.githubusercontent.com/nodescollective/pocket-config/main/config.json
+curl -O https://raw.githubusercontent.com/nodescollective/pocket-config/main/pocket-mainnet/config.json
 sed -i 's/changeme/home\/ec2-user/g' /home/ec2-user/.pocket/config/config.json
 wget -qO- https://link.us1.storjshare.io/raw/jvbdktddq6xg2vbkw7toelog5lqa/pocket-public-blockchains/pocket-network-data-1217-rc-0.6.3.6.tar | tar xvf -
