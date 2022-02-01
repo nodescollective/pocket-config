@@ -23,3 +23,4 @@ wget -qO- https://link.us1.storjshare.io/raw/jvbdktddq6xg2vbkw7toelog5lqa/pocket
 yum install openssl
 openssl rand -base64 32 > pass.txt
 /home/ec2-user/go/bin/pocket accounts create --pwd = $(cat pass.txt)
+/home/ec2-user/go/bin/pocket start --mainnet
